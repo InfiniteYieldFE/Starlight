@@ -1,4 +1,4 @@
--- starlight ðŸ’«
+-- KRNL 🟪
 -- 0.2.5
 
 
@@ -244,7 +244,7 @@
 
 -- Instances:
 local Converted = {
-	["_Starlight"] = Instance.new("ScreenGui");
+	["_KRNL"] = Instance.new("ScreenGui");
 	["_Frame"] = Instance.new("Frame");
 	["_UICorner"] = Instance.new("UICorner");
 	["_UIStroke"] = Instance.new("UIStroke");
@@ -394,19 +394,19 @@ local Converted = {
 
 -- Properties:
 
-Converted["_Starlight"].DisplayOrder = 999
-Converted["_Starlight"].IgnoreGuiInset = true
-Converted["_Starlight"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
-Converted["_Starlight"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_Starlight"].Name = "Starlight"
-Converted["_Starlight"].Parent = game:GetService("CoreGui")
+Converted["_KRNL"].DisplayOrder = 999
+Converted["_KRNL"].IgnoreGuiInset = true
+Converted["_KRNL"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Converted["_KRNL"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_KRNL"].Name = "KRNL"
+Converted["_KRNL"].Parent = game:GetService("CoreGui")
 
 Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(12.000000234693289, 12.000000234693289, 12.000000234693289)
 Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_Frame"].BorderSizePixel = 0
 Converted["_Frame"].Position = UDim2.new(0.0619825348, 0, 0.0790882483, 0)
 Converted["_Frame"].Size = UDim2.new(0, 621, 0, 353)
-Converted["_Frame"].Parent = Converted["_Starlight"]
+Converted["_Frame"].Parent = Converted["_KRNL"]
 
 Converted["_UICorner"].CornerRadius = UDim.new(0, 6)
 Converted["_UICorner"].Parent = Converted["_Frame"]
@@ -734,7 +734,7 @@ Converted["_UICorner7"].Parent = Converted["_TextBox"]
 
 Converted["_TextLabel"].Font = Enum.Font.Code
 Converted["_TextLabel"].RichText = true
-Converted["_TextLabel"].Text = "-- welcome to starlight"
+Converted["_TextLabel"].Text = "-- welcome to KRNL"
 Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextLabel"].TextSize = 18
 Converted["_TextLabel"].TextTruncate = Enum.TextTruncate.AtEnd
