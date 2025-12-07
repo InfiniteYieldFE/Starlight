@@ -244,7 +244,7 @@
 
 -- Instances:
 local Converted = {
-	["_Starlight"] = Instance.new("ScreenGui");
+	["_KRNL"] = Instance.new("ScreenGui");
 	["_Frame"] = Instance.new("Frame");
 	["_UICorner"] = Instance.new("UICorner");
 	["_UIStroke"] = Instance.new("UIStroke");
@@ -394,12 +394,12 @@ local Converted = {
 
 -- Properties:
 
-Converted["_Starlight"].DisplayOrder = 999
-Converted["_Starlight"].IgnoreGuiInset = true
-Converted["_Starlight"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
-Converted["_Starlight"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_Starlight"].Name = "Starlight"
-Converted["_Starlight"].Parent = game:GetService("CoreGui")
+Converted["_KRNL"].DisplayOrder = 999
+Converted["_KRNL"].IgnoreGuiInset = true
+Converted["_KRNL"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Converted["_KRNL"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_KRNL"].Name = "KRNL"
+Converted["_KRNL"].Parent = game:GetService("CoreGui")
 
 Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(12.000000234693289, 12.000000234693289, 12.000000234693289)
 Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -869,7 +869,7 @@ Converted["_UIStroke11"].Thickness = 1.5
 Converted["_UIStroke11"].Parent = Converted["_Sledge"]
 
 Converted["_Star"].Font = Enum.Font.SourceSans
-Converted["_Star"].Text = "starlight hint"
+Converted["_Star"].Text = "KRNL hint"
 Converted["_Star"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Star"].TextScaled = true
 Converted["_Star"].TextSize = 14
@@ -1249,7 +1249,7 @@ Converted["_Verify"].Name = "Verify"
 Converted["_Verify"].Parent = Converted["_Frame"]
 
 Converted["_Verify1"].Font = Enum.Font.Ubuntu
-Converted["_Verify1"].Text = "Starlight - Verification"
+Converted["_Verify1"].Text = "KRNL - Verification"
 Converted["_Verify1"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Verify1"].TextScaled = true
 Converted["_Verify1"].TextSize = 50
@@ -1381,7 +1381,7 @@ Converted["_str"].Position = UDim2.new(0.845882356, 0, 0.173590511, 0)
 Converted["_str"].Size = UDim2.new(0, 50, 0, 50)
 Converted["_str"].Visible = false
 Converted["_str"].Name = "str"
-Converted["_str"].Parent = Converted["_Starlight"]
+Converted["_str"].Parent = Converted["_KRNL"]
 
 Converted["_UIStroke26"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 Converted["_UIStroke26"].Color = Color3.fromRGB(57.00000040233135, 57.00000040233135, 57.00000040233135)
@@ -1641,7 +1641,7 @@ local function BEEKENZ_fake_script() -- Fake Script: StarterGui.Starlight.Frame.
 	end)
 	script.Parent.MouseButton1Click:Connect(function()
 		game.StarterGui:SetCore("SendNotification",{
-			Title = "ðŸ’« starlight",
+			Title = "🟪 KRNL",
 			Text = "discord server link copied",
 			Duration = 12
 		})
@@ -1797,7 +1797,7 @@ local function AIXWS_fake_script() -- Fake Script: StarterGui.Starlight.Frame.Fr
 	codeBox:GetPropertyChangedSignal("Text"):Connect(update)
 	
 	-- Initial highlight
-	codeBox.Text = "-- welcome to starlight"
+	codeBox.Text = "-- welcome to KRNL"
 	update()
 	
 	
@@ -2419,7 +2419,7 @@ local function OHZSZXY_fake_script() -- Fake Script: StarterGui.Starlight.Frame.
 		if foundExploit then return false end
 		if not isLikelyBackdoorRemote(remote) then return false end
 	
-		local modelName = "starlight_"..tostring(os.clock()):gsub("%.", "")
+		local modelName = "KRNL_"..tostring(os.clock()):gsub("%.", "")
 		local rs = game:GetService("ReplicatedStorage")
 		local foundEvent = false
 	
@@ -2442,7 +2442,7 @@ local function OHZSZXY_fake_script() -- Fake Script: StarterGui.Starlight.Frame.
 				m.Parent=game:GetService("ReplicatedStorage")
 			]]
 			if isFunction then
-				remote:InvokeServer('starlightTSS', payload .. "\nreturn true")
+				remote:InvokeServer('KRNLTSS', payload .. "\nreturn true")
 			else
 				remote:FireServer(payload)
 			end
@@ -2489,7 +2489,7 @@ local function OHZSZXY_fake_script() -- Fake Script: StarterGui.Starlight.Frame.
 			end
 		end
 	
-		print(string.format("ðŸ’« starlight: ðŸ” scanning %d remotes", #remotes))
+		print(string.format("🟪 KRNL: ðŸ” scanning %d remotes", #remotes))
 	
 		local MAX_CONCURRENT = 64 -- go wild ðŸ˜ˆ
 		local activeTasks = 0
@@ -2509,7 +2509,7 @@ local function OHZSZXY_fake_script() -- Fake Script: StarterGui.Starlight.Frame.
 				end)
 	
 				if ok and result then
-					print("ðŸ’« starlight: backdoor found:", remotes[i]:GetFullName())
+					print("🟪 KRNL: backdoor found:", remotes[i]:GetFullName())
 				end
 	
 				activeTasks -= 1
@@ -2525,10 +2525,10 @@ local function OHZSZXY_fake_script() -- Fake Script: StarterGui.Starlight.Frame.
 		FinishedFound = true
 	
 		if not foundExploit then
-			print("ðŸ’« starlight: no backdoor found")
+			print("🟪 KRNL: no backdoor found")
 		end
 	
-		print(string.format("ðŸ’« starlight: scan completed in %.3f seconds", scanTime))
+		print(string.format("🟪 KRNL: scan completed in %.3f seconds", scanTime))
 	end
 	
 	
@@ -2544,7 +2544,7 @@ local function OHZSZXY_fake_script() -- Fake Script: StarterGui.Starlight.Frame.
 		else
 			warn("ðŸ’« starlight: no backdoor, cannot execute code.")
 			game.StarterGui:SetCore("SendNotification",{
-				Title = "ðŸ’« starlight",
+				Title = "🟪 KRNL",
 				Text = "no backdoor found, or you didn't scan! - can't run code.",
 				Duration = 12
 			})
@@ -2634,7 +2634,7 @@ local function OHZSZXY_fake_script() -- Fake Script: StarterGui.Starlight.Frame.
 	script.Parent.Logs.ToggleMode.MouseButton1Click:Connect(function()
 		if remoteFunction or remoteEvent then
 			game.StarterGui:SetCore("SendNotification",{
-				Title = "ðŸ’« starlight",
+				Title = "🟪 KRNL",
 				Text = "the backdoor is already found, you don't need to change this!",
 				Duration = 5
 			})
